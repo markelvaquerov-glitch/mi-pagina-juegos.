@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Gamer | Tu Web de Videojuegos</title>
+    <style>
+        /* Estilos Base */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121214;
+            color: #e1e1e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Barra de Navegación */
+        header {
+            background-color: #1f1f23;
+            padding: 20px;
+            border-bottom: 3px solid #8257e5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav h1 {
+            margin: 0;
+            color: #8257e5;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #e1e1e6;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #8257e5;
+        }
+
+        /* Contenedor Principal */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Sección Destacados */
+        .featured {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 5px solid #8257e5;
+        }
+
+        .featured h2 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        /* Grid de Juegos/Noticias */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1f1f23;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #8257e5;
+        }
+
+        .tag {
+            background-color: #29292e;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>🎮 MundoGamer</h1>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Análisis</a></li>
+                <li><a href="#">Géneros</a></li>
+                <li><a href="#">Comunidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured">
+            <span class="tag" style="width: fit-content; margin-bottom: 10px;">RECOMENDADO DE LA SEMANA</span>
+            <h2>El resurgir de los RPG de estrategia</h2>
+            <p>Analizamos las claves del éxito de los nuevos títulos que están dominando el mercado este año.</p>
+        </section>
+
+        <h2>Últimos Análisis</h2>
+        <section class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <span class="tag">Acción / RPG</span>
+                    <h3>Crónicas del Destino</h3>
+                    <p>Un mundo abierto impresionante que lleva los límites de la actual generación al extremo. ¿Vale la pena?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <span class="tag">Indie</span>
+                    <h3>Neon Cyber Rush</h3>
+                    <p>Acción frenética en plataformas 2D con una banda sonora synthwave que te atrapará desde el primer minuto.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <span class="tag">Estrategia</span>
+                    <h3>Imperios del Espacio IV</h3>
+                    <p>Gestiona tu civilización galáctica en el simulador espacial más profundo y complejo creado hasta la fecha.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
